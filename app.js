@@ -11,6 +11,7 @@ db.serialize(function () {
     "INSERT INTO user VALUES ('privilegedUser', 'privilegedUser1', 'Administrator')"
   );
 });
+
 const app = express();
 app.use(express.static("."));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -50,5 +51,6 @@ app.post("/login", function (req, res) {
     }
   });
 });
+
 
 app.listen(3000);

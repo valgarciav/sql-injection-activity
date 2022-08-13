@@ -1,7 +1,7 @@
-const http = require("http"),
-  path = require("path"),
-  express = require("express"),
-  bodyParser = require("body-parser");
+const http = require('http'),
+	path = require('path'),
+	express = require('express'),
+	bodyParser = require('body-parser');
 
 const sqlite3 = require("sqlite3").verbose();
 const db = new sqlite3.Database(":memory:");
